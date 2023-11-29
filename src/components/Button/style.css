@@ -1,0 +1,40 @@
+button.btn-base {
+  border: 0;
+  background: rgb(200, 210, 220);
+  background: linear-gradient(
+    180deg,
+    rgba(200, 210, 220, 1) -50%,
+    rgba(150, 160, 170, 1) 150%
+  );
+  padding: 1em;
+  margin-top: 1em;
+  color: white;
+  font-size: 1em;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button.btn-base:not(:disabled):hover {
+  box-shadow: 0 0 10px rgba(200, 210, 220, 0.8);
+  background: linear-gradient(
+    180deg,
+    rgba(200, 210, 220, 1) 0%,
+    rgba(150, 160, 170, 1) 200%
+  );
+}
+
+button.btn-base:active {
+  background: linear-gradient(
+    0deg,
+    rgba(200, 210, 220, 1) 0%,
+    rgba(150, 160, 170, 1) 200%
+  );
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+button.btn-base:disabled {
+  background: rgb(209, 209, 209);
+  cursor: default;
+}
